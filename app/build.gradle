@@ -39,7 +39,8 @@ android {
 }
 
 dependencies {
-    compile project(':componentservice')
+    implementation project(':componentservice')
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     annotationProcessor project(':router-anno-compiler')
 }
 
