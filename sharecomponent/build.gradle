@@ -33,10 +33,10 @@ android {
 }
 
 dependencies {
-    compile project(':componentservice')
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':componentservice')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     annotationProcessor 'com.luojilab.ddcomponent:router-anno-compiler:1.0.0'
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 
 combuild {
