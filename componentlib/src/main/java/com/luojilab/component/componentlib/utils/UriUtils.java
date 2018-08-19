@@ -128,6 +128,7 @@ public class UriUtils {
                 bundle.putString(key, value);
             }
         } catch (Throwable ex) {
+            ex.printStackTrace();
         }
     }
 }

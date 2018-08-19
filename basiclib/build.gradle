@@ -22,6 +22,7 @@ android {
 }
 
 dependencies {
+    //底层module依赖的库或项目如果想被上传module使用，则必须使用api方式引用，而不能通过implementation方式引用
     api fileTree(dir: 'libs', include: ['*.jar'])
     api 'com.android.support:appcompat-v7:27.1.1'
     api 'com.squareup.picasso:picasso:2.5.2'
